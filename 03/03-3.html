@@ -5,27 +5,67 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
     <style>
-        .box{
+        .container{
+            
+            margin: auto;
+            width: 960px;
             display: flex;
-            flex-direction: column;
-            width: 300px;
-            background-color: #ccc;
         }
         .item{
-            margin: auto;
-
+            width: 268px;
+            margin: 10px;
+            padding: 15px;
+            border: 1px solid #f00;
+            display: flex;
+            flex-direction: column;
         }
+        .item .pic img{
+            width: 100%;
+            vertical-align: top;
+            
+        }
+        .item p{
+            flex-grow: 1;
+            /* margin-bottom: auto; */
+            /* margin-top: auto; */
+            padding: 5px;
+        } 
     </style>
 </head>
 
 <body>
     
-    <div class="box">
-        <div class="item"><img src="https://picsum.photos/id/684/300/200" alt=""></div>
-        <div class="item">全方位培訓營</div>
-        <div class="item">課程包含Git/HTML/JavaScript/Ruby on Rails適合在職或希望在職上課的人</div>
-        <div class="item"><a href="#">前往課程</a></div>
+    <div class="container">
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/id/683/350/200" alt="">
+            </div>
+            <h3>線上課程</h3>
+            <p>不限時間、地點，自己掌握學習進度。課程內容包含前後端課程，附加完課即提供免費履歷健檢服務。適合在職、喜歡自己掌握進度的人</p>
+            <a href="#">前往課程</a>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/id/684/350/200" alt="">
+            </div>
+            <h3>全方位培訓營</h3>
+            <p>課程包含Git/HTML/JavaScript/Ruby on Rails適合在職或希望在職上課的人</p>
+            <a href="#">前往課程</a>
+        </div>
+        <div class="item">
+            <div class="pic">
+                <img src="https://picsum.photos/id/685/350/200" alt="">
+            </div>
+            <h3>三個月實戰轉職全端工程師</h3>
+            <p>除了提供前端到後端課程外，課程期間還包含履歷健檢、模擬面試、專題製作、企業交流等服務。適合有時間決心轉職工程師的素人。</p></p>
+            <a href="#">前往課程</a>
+        </div>
+
+
+
     </div>
+
 </body>
 </html>
