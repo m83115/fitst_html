@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+
+    <!-- 做出蝦皮的折扣小標籤-->
+    <style>
+        .box{
+            width: 300px;
+            border: 1px solid #000;
+            position: relative;
+            margin: 30px;
+        }
+        .box img{
+            width: 100%;
+        }
+        .label{
+            position: absolute;
+            background-color: #f00;
+            top: 10px;
+            left: -10px;
+            padding:10px 20px;
+            color: #fff;
+    
+        }
+        .lable:after{
+            content: '';
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 0;
+            height: 0;
+            border-top: 6px solid #600;
+            border-left: 9px solid transparent;
+        }
+        .box .txt{
+            padding: 20px;
+        }
+        .flag{
+            background-color: #ee0;
+            position: absolute;
+            top: 0;
+            right: 0px;
+            padding: 10px 0;
+            width: 40px;
+            text-align: center; 
+        }
+        ,flag:after{
+            content: '';
+            position: absolute;
+            left: 0px;
+            top: 100%;
+            width: 0;
+            height: 0;
+            border-bottom: 10px solid transparent;
+            border-left: 20px solid #e00;
+            border-right: 20px solid #e00;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div class="box">
+        <div class="label">快速出貨</div>
+        <div class="flag">5折</div>
+        <img src="https://picsum.photos/id/684/300/300" alt="">
+        <div class="txt">
+            <h1>title</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint maiores consequatur odit 
+            </p>
+        </div>
+    </div>
+    
+</body>
+</html>

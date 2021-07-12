@@ -7,14 +7,46 @@
     <title>Document</title>
     <link rel="stylesheet" href="reset.css">
     <style>
-        img.{
-            clip-path: inset(100px 50px 100px 50px);
+        .img{
+            /* position: absolute; */
+            width: 600px;
+            height: 300px;
+            background-image: url("https://picsum.photos/id/689/1440/500");
+            text-align: center;
+        }
+        /* .img p{
+            text-align: center;
+            color: #fff;
+            font-size: 50px;
+        } */
+        .img .txt{
+            text-align: center;
+            color: #fff;
+            font-size: 50px;
+            
+            
+        }
+        .img:after{
+            /* position: relative; */
+            margin-top: 150px;
+            content: '';
+            display: block;
+            width: 0;
+            height: 0px;
+            border-left: 200px solid #fff ;
+            border-right:  400px solid #fff ;
+            border-top:  100px solid transparent ;
+            /* border-bottom:  300px solid transparent; */
         }
     </style>
 </head>
 <body>
     <div class="img">
-        <a href="https://5xruby.tw/"><img src="https://picsum.photos/id/683/500/500" alt="">
+        
+        <div class="txt">
+            <p>123</p>
+        </div>
+
     </div>
 </body>
 </html>

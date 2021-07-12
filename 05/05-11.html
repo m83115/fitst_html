@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+
+<!-- 漸層之做法 -->
+
+    <style>
+        .pic{
+            background-color: #f00;
+            position: relative;
+        }
+   
+
+        
+        .pic:after{
+            position:absolute;
+            content: '';
+            height: 30px;
+            width: 100%;
+            left: 0px;
+            right: 0px;
+            background-image: linear-gradient(0deg, #f00, #00f8);
+
+        }
+        .pic img{
+            display: block;
+        }
+        .box{
+            width: 300px;
+            border: 1px solid red;
+        }
+        .txt{
+            background-color: #00f;
+            padding: 10px;
+            color: #fff;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="pic"><img src="https://picsum.photos/id/684/200/300" alt=""></div>
+        <div class="txt">
+            <h3>title</h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+
+    </div>
+</body>
+</html>
