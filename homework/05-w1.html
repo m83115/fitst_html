@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .a0{
+            width: 50px;
+            height: 50px;
+        }
+        .b0{
+            width: 50px;
+            height: 50px;
+        }
+        .box1{
+            width: 600px;
+            height: 400px;
+            margin: 350px;
+            align-items: center;
+            background-color: #fa0 ;
+            position: relative;
+            
+        }
+        .box1 .box2 .item{
+            width: 300px;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+
+        }
+        .box1 h3{
+            font-size: 30px;
+        }
+        .box1 p{
+            font-size: 20px;
+        }
+        .box2{   
+            width: 300px;
+            height: 300px;
+            background-color: #f00;
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            font-size: 40px;
+            color: #fff;
+        }
+        .box3{
+            width: 300px;
+            height: 200px;
+            background-color: #ccc;
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            z-index: -1;
+        }
+        .box4{
+            width: 600px;
+            height: 350px;
+            background-color: #ccc;
+            position: absolute;
+            bottom: -250px;
+            right: 300px;
+            line-height: 25px;
+            
+        }
+        .box4 h3{
+            display: flex;
+            align-items: center;
+        }
+        .box4 h3:after{
+            content: '';
+            width: 10px;
+            height: 2px;
+            background-color: #f00;
+            display: inline-block;
+            flex-grow: 1;
+        }
+        .box4 h3{
+            color: #f00;
+            font-size: 35px;
+        }
+        .box5{
+            width: 80px;
+            height: 40px;
+            background-color: #f00;
+            position: absolute;
+            top: 170px;
+            left: 550px;
+            
+        }
+        .box5::after{
+            content: '';
+            width: 0;
+            height: 0;
+            border-top: 15px solid transparent;
+            border-bottom: 15px solid transparent;
+            border-left: 25px solid #fff;
+            display:inline-block;
+            margin: auto;
+        }
+
+        .box6{
+            width: 600px;
+            height: 400px;
+            margin: 350px;
+            align-items: center;
+            background-color: #fa0 ;
+            position: relative;
+            
+        }
+        .box6 .box7 .item{
+            width: 300px;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+
+        }
+        .box6 h3{
+            font-size: 30px;
+        }
+        .box6 p{
+            font-size: 20px;
+        }
+        .box7{   
+            width: 300px;
+            height: 300px;
+            background-color: #f00;
+            position: absolute;
+            top: -100px;
+            left: 500px;
+            font-size: 40px;
+            color: #fff;
+        }
+        .box8{
+            width: 300px;
+            height: 200px;
+            background-color: #ccc;
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            z-index: -1;
+        }
+        .box9{
+            width: 600px;
+            height: 350px;
+            background-color: #ccc;
+            position: absolute;
+            bottom: -250px;
+            left: 300px;
+            line-height: 25px;
+            
+        }
+        .box4 h3{
+            display: flex;
+            align-items: center;
+        }
+        .box9 h3:after{
+            content: '';
+            width: 10px;
+            height: 2px;
+            background-color: #f00;
+            display: inline-block;
+            flex-grow: 1;
+        }
+        .box9 h3{
+            color: #f00;
+            font-size: 35px;
+        }
+        .box10{
+            width: 80px;
+            height: 40px;
+            background-color: #f00;
+            position: absolute;
+            top: 170px;
+            right: 550px;
+        }
+
+        .box11{
+            width: 600px;
+            height: 400px;
+            margin: 350px;
+            align-items: center;
+            background-color: #fa0 ;
+            position: relative;
+            
+        }
+        .box11 .box12 .item{
+            width: 300px;
+            height: 100%;
+            background-color: #000;
+            color: #fff;
+
+        }
+        .box11 h3{
+            font-size: 30px;
+        }
+        .box11 p{
+            font-size: 20px;
+        }
+        .box12{   
+            width: 300px;
+            height: 300px;
+            background-color: #f00;
+            position: absolute;
+            top: -100px;
+            left: -100px;
+            font-size: 40px;
+            color: #fff;
+        }
+        .box13{
+            width: 300px;
+            height: 200px;
+            background-color: #ccc;
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            z-index: -1;
+        }
+        .box14{
+            width: 600px;
+            height: 350px;
+            background-color: #ccc;
+            position: absolute;
+            bottom: -250px;
+            right: 300px;
+            line-height: 25px;
+            
+        }
+        .box14 h3{
+            display: flex;
+            align-items: center;
+        }
+        .box14 h3:after{
+            content: '';
+            width: 10px;
+            height: 2px;
+            background-color: #f00;
+            display: inline-block;
+            flex-grow: 1;
+        }
+        .box14 h3{
+            color: #f00;
+            font-size: 35px;
+        }
+        .box15{
+            width: 80px;
+            height: 40px;
+            background-color: #f00;
+            position: absolute;
+            top: 170px;
+            left: 550px;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="box1">
+        <div class="box2">01 操控樂趣
+            <div class="item">
+                <h3>人人滿意的駕駛體驗</h3>
+                <p>透過最佳重量分配，實現平順起步、直線穩定加速，過彎同時保持車身平穩帶給駕駛更靈敏的道路反饋，享受隨心馳騁的行駛快感</p>
+
+            </div>
+        </div>
+        <div class="box3">
+
+        </div>
+        <div class="box4">
+            <h3>因為我們做了這些革新</h3>
+            <h4>低重心設計</h4>
+            <ul>透過低重心設計，不僅呈現更低伏的外觀，更能減少車身側傾，保持高速行駛穩定性。</ul>
+            <h4>車體剛性強化</h4>
+            <ul>車身結構採用超高強度鋼材，提高車輛穩定性，同時藉由雷射強化焊接技術，大幅增加焊點數量，提升車身抗扭剛性，強化駕馭穩定性及安全性。</ul>
+            <h4>四輪獨立懸吊</h4>
+            <p>搭載全新四輪獨立懸吊設定，透過懸吊的高承載強度，保持輪胎抓地力，同時兼顧轉向靈敏度與清晣感回饋，提升駕馭樂趣。</p>
+
+        </div>
+        <div class="box5">
+
+
+        </div>
+
+    </div>
+
+    <div class="a0">
+
+    </div>
+
+    <div class="box6">
+        <div class="box7">安全守護 02
+            <div class="item">
+                <h3>行車更安心的高剛性車高體</h3>
+                <p>您的愛車會妥善保護您，強悍穩固的車身可使您安全無虞。世界級的安全功能讓您輕鬆自如享受旅程、豪無後顧之憂</p>
+
+            </div>
+        </div>
+        <div class="box8">
+
+        </div>
+        <div class="box9">
+            <h3>因為我們做了這些革新</h3>
+            <h4>主動安全</h4>
+            <ul>以先進的TSS系統，主動偵測路況，輔助駕駛判斷路況並維持行車安全。</ul>
+            <h4>被動安全</h4>
+            <ul>堅固的高剛性車體，使用熱沖壓材料的高強度抗扭鋼板，強化座艙對意外事故的保護力</ul>
+
+        </div>
+        <div class="box10">
+
+
+        </div>
+
+    </div>
+    <div class="b0">
+
+    </div>
+
+    <div class="box11">
+        <div class="box12">03 乘坐舒適
+            <div class="item">
+                <h3>令人放鬆舒適的車室空間</h3>
+                <p>車室空間設計著重人體工學，透過方向盤、踏板等位置優化，追求更舒適的駕駛位置，並以新型座椅設計，提高座椅包覆性，致力實現長途駕駛不疲勞的舒適駕馭體驗。</p>
+
+            </div>
+        </div>
+        <div class="box13">
+
+        </div>
+        <div class="box14">
+            <h3>因為我們做了這些革新</h3>
+            <h4>駕駛位置最佳化</h4>
+            <ul>針對駕駛位置進行徹底的修改，讓駕馭者可如同握手般自然且舒適地操控方向盤。</ul>
+            <h4>駕馭視野佳</h4>
+            <ul>考量駕駛坐進車內的高度，透過前檔風玻璃位置的調整，達到盲區極小化，使駕駛視野更開闊，同步提升駕馭安全。</ul>
+            <h4>更寧靜的車室</h4>
+            <p>採用最新三層結構的隔音材料，與引擎、變速箱的零件改革，將座艙的震動抑制在最小限度，提供乘客舒適安靜的感受</p>
+
+        </div>
+        <div class="box15">
+
+
+        </div>
+
+    </div>
+   
+</body>
+</html>

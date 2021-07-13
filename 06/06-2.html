@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        /* 做小圓點，小方形的方法 */
+
+        /* p{
+            padding-left: 1em;
+            background-color: #ccc;
+            background-image: linear-gradient(0deg, red, red);
+            background-repeat: no-repeat;
+            background-size: 10px 10px;
+            background-position: 4px 4px;
+        } */
+        p{
+            background: #ccc;
+            padding-left: 1em;
+            position: relative;
+
+        }
+        p::before{
+            content: '';
+            position: absolute;
+            width: 5px;
+            height: 5px;
+            background-color: #f00;
+            left: 5px;
+            top: 5px;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus nam obcaecati libero nesciunt numquam quidem. Quasi, consequatur aliquam corrupti numquam in ipsa dolor placeat eaque non delectus necessitatibus, inventore dolorem.</p>
+</body>
+</html>
