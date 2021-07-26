@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <style>
+        .main-header{
+            background-color: #d1e9d3;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            position: relative;
+        }
+        .logo img{
+            vertical-align: middle;
+        }
+        #menu-control{
+            position: fixed;
+            top: 0;
+            left: -30px;
+        }
+
+        @media screen and (max-width: 767px) {
+            .main-nav{
+            position: absolute;
+            top: 100%;
+            left: -100px;
+            opacity: 0;
+            width: 100%;
+            background-color: #f585a0;
+        }
+        .main-nav a{
+            display: block;
+            padding: 10px;
+            text-decoration: none;
+            color: #fff;
+        }
+        .main-nav a:not(:first-child){
+            border-top: 1px solid #fff;
+        }
+        
+        .btn-hb{
+            width: 40px;
+            height: 40px;
+            background-color: #aaa;
+            position: relative;
+            
+        }
+        .btn-hb .bar{
+            width: 86%;
+            height: 4px;
+            background-color: #666;
+            /* display: block; */
+            position: absolute;
+            top: 18px;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            margin: auto;
+            transition: 1s;    
+        }
+        .btn-hb .bar:first-child{
+            top: 10px;
+        }
+        .btn-hb .bar:last-child{
+            top: 26px;
+        }
+        #menu-control:checked ~ .main-header .main-nav{
+            left: 0;
+            opacity: 1;
+            transition: 1s;
+        }
+        #menu-control:checked ~ .main-header .btn-hb .bar:first-child{
+            top: 18px;
+        }
+        #menu-control:checked ~ .main-header .btn-hb .bar:last-child{
+            top: 18px;
+        }
+            
+    }
+    @media screen and (min-width: 768px){
+        .main-nav a{
+            display: inline-block;
+            padding: 10px;
+            color: #000;
+        }
+    }
+    @media screen and (min-width: 768px) and (hover:hover){
+        .main-nav a:hover{
+            color: #f00;
+        }
+        
+    }
+        
+
+    </style>
+</head>
+<body>
+    <input type="checkbox" name="" id="menu-control">
+    <header class="main-header">
+        <a href="#" class="logo"><img src="https://picsum.photos/id/684/100/40" alt="logo"></a>
+    </header>
+
+    <label class="btn-hb" for="menu-control">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </label>
+
+    <nav class="main-nav">
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+        <a href="#">link</a>
+    </nav>
+
+    <!-- ====================================== -->
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi deserunt quasi vitae consequuntur corrupti quas aut, ipsam officiis. Voluptatum id velit dolorem autem laudantium accusamus quas temporibus adipisci eligendi provident.</p>
+
+    
+</body>
+</html>

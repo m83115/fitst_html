@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+           .container{
+            max-width: 1200px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .col{
+            width: 50%;
+            box-sizing: border-box;
+            padding: 0px 15px;
+        }
+        .mv{
+            width: 100%;
+            height: 0px;
+            padding-top: 56.25%; 
+            /* 用paddingtop要在iframe多加top0 315/560*100 */
+
+            /* width: 560px;
+            padding-bottom: 315px; */
+            background-color: #aaa;
+            position: relative;
+        }
+        .mv iframe{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0px;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="col">
+            <div class="mv">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/MZ7ESoADu28" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+        <div class="col">
+            <div class="txt">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officiis ab, odit aperiam, natus suscipit delectus quae sequi consequuntur eum excepturi, at deserunt quas. Nisi non iste odio, possimus aliquid quibusdam.
+            </div>
+        </div>
+    </div>
+</body>
+</html>
