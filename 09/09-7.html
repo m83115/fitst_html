@@ -32,25 +32,25 @@
             opacity: 0;
             width: 100%;
             background-color: #f585a0;
-        }
-        .main-nav a{
+            }
+            .main-nav a{
             display: block;
             padding: 10px;
             text-decoration: none;
             color: #fff;
-        }
-        .main-nav a:not(:first-child){
+            }
+            .main-nav a:not(:first-child){
             border-top: 1px solid #fff;
-        }
+            }
         
-        .btn-hb{
+            .btn-hb{
             width: 40px;
             height: 40px;
             background-color: #aaa;
             position: relative;
             
-        }
-        .btn-hb .bar{
+            }
+            .btn-hb .bar{
             width: 86%;
             height: 4px;
             background-color: #666;
@@ -58,30 +58,41 @@
             position: absolute;
             top: 18px;
             right: 0;
-            bottom: 0;
+            /* bottom: 0; */
             left: 0;
+            opacity: 1;
             margin: auto;
-            transition: 1s;    
-        }
-        .btn-hb .bar:first-child{
+               
+            }
+            .btn-hb .bar:first-child{
             top: 10px;
-        }
-        .btn-hb .bar:last-child{
+            transform: rotate(0deg);
+            }
+            .btn-hb .bar:last-child{
             top: 26px;
-        }
-        #menu-control:checked ~ .main-header .main-nav{
+            transform: rotate(0deg);
+            }
+            #menu-control:checked ~ .main-header .main-nav{
             left: 0;
             opacity: 1;
             transition: 1s;
-        }
-        #menu-control:checked ~ .main-header .btn-hb .bar:first-child{
+            }
+            #menu-control:checked ~ .main-header .btn-hb .bar:nth-child(2){
+                opacity: 0;
+                transition: opacity 1s;
+            }
+            #menu-control:checked ~ .main-header .btn-hb .bar:first-child{
             top: 18px;
-        }
-        #menu-control:checked ~ .main-header .btn-hb .bar:last-child{
+            transform: rotate(45deg);
+            transition: top 1s, transform 1s 1s;
+            }
+            #menu-control:checked ~ .main-header .btn-hb .bar:last-child{
             top: 18px;
-        }
+            transform: rotate(-45deg);
+            transition: top 1s, transform 1s 1s;
+            }
             
-    }
+        }
     @media screen and (min-width: 768px){
         .main-nav a{
             display: inline-block;
@@ -101,24 +112,28 @@
 </head>
 <body>
     <input type="checkbox" name="" id="menu-control">
+
     <header class="main-header">
-        <a href="#" class="logo"><img src="https://picsum.photos/id/684/100/40" alt="logo"></a>
-    </header>
+        <a href="#" class ="logo">
+            <img src="https://picsum.photos/id/684/100/40" alt="logo">
+        </a>
+    
+        <label class="btn-hb" for="menu-control">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </label>
 
-    <label class="btn-hb" for="menu-control">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-    </label>
+        <nav class="main-nav">
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
 
-    <nav class="main-nav">
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-        <a href="#">link</a>
-    </nav>
+    </header>    
 
     <!-- ====================================== -->
 
